@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Miasan,outdoor,kitchen,天池山莊, Tienchi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>天池補給站</title>
+    
+    <link rel="stylesheet" href="styles/home.css">
+    
+    <script src="jquery.i18n/jquery-3.4.1.min.js"></script>
+    <script src="jquery.i18n/CLDRPluralRuleParser.js"></script>
+    <script src="jquery.i18n/jquery.i18n.js"></script>
+    <script src="jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    
+    <script>
+        $.i18n( {
+    locale: 'en' // Locale is English
+        } );
+    
+    $.i18n().load( {
+	en: {
+		'message-hello': 'Hello World',
+		'message-goodbye': 'Good bye'	},
+	zh: 'i18n/messages-zh.json' // Messages for Chinese
+} );
+    
+    $.i18n( 'message-hello' );
+    </script>
+</head>
+    
+<body>
+    <img class="img_bg" >
+    <img class="img_home" src="img/home.png">
+    <img class="img_blog" src="img/blog.png">
+    <img class="img_product" src="img/product.png">
+    <img class="img_order" src="img/order.png">
+    <img class="img_contact" src="img/contact.png">
+
+      <h3 id="ml-demo"> </h3>
+      <button onclick="$.MultiLanguage('language.json', 'zh')" class="btn">中文</button><span>&nbsp;</span>
+      <button onclick="$.MultiLanguage('language.json', 'en')" class="btn">English</button>
+
+    <p id="message-hello">Fallback text here!</p>
+    
+</body>
+</html>
+    
