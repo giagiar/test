@@ -13,12 +13,10 @@ jQuery(document).ready(function() {
   $.i18n().load({
     'en': {
       'welcome': 'Welcome!',
+      'messages-hello':'hihi',
       'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
     },
-    'zh': {
-      'welcome': '歡迎',
-      'message_from': '$1 {{gender:$3|отправил|отправила}} вам $2 {{plural:$2|сообщение|сообщений|сообщения}}. {{gender:$3|Он|Она}} ждёт ответа!'
-    }
+    'zh':'languages/zh.json'
   });
 
   update_texts();

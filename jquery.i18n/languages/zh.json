@@ -1,6 +1,7 @@
 {
-	"message_hello": "您好",
+	"welcome" : "歡迎",
+	"messages-hello": "您好",
 	"message_2": "TWO",
 	"message_3": "THREE",
-	"welcome": "歡迎"
+
 }
