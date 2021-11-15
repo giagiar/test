@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="zh">
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Miasan,outdoor,kitchen,天池山莊, Tienchi">
+    <meta name="keywords" content="Miasan,outdoor,kitchen,天池山莊, 廚房，訂餐，Tienchi">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>天池補給站</title>
@@ -22,23 +22,33 @@
     <script src="jquery.i18n/jquery.i18n.emitter.js"></script>
     <script src="jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
     
-    <script>
-        $.i18n( {
-    locale: 'en' // Locale is English
-        } );
+    	<!-- Test config -->
+	<script>
+		$.i18n.debug = true;
+	</script>
+
+    <!-- Test Suite -->
+    <script src="jquery.i18n/i18n.js"></script>
+
+
+	<!-- Localization files are loaded using <link> elements -->
+	<link rel="localization" hreflang="en" href="languages/i18n_en.json" type="application/l10n+json">
+	<link rel="localization" hreflang="zh" href="languages/i18n_zh.json" type="application/l10n+json">
     
+    <script>
     $.i18n().load( {
 	en: {
 		'message-hello': 'Hello World',
 		'message-goodbye': 'Good bye'	},
-	zh: 'i18n/messages-zh.json' // Messages for Chinese
+	zh 'i18n/zh.json', // Messages for Japanese
+
 } );
-    
-    $.i18n( 'message-hello' );
     </script>
+            
 </head>
     
 <body>
+    
     <img class="img_bg" >
     <img class="img_home" src="img/home.png">
     <a href="product.html"><img class="img_product" src="img/product.png"></a>
@@ -46,11 +56,12 @@
     <a href="demo/index.html"><img class="img_contact" src="img/contact.png"></a>
     <a href="blog.html"><img class="img_blog" src="img/blog.png"></a>
     
-      <h3 id="ml-demo"> </h3>
-      <button onclick="$.MultiLanguage('language.json', 'zh')" class="btn">中文</button><span>&nbsp;</span>
-      <button onclick="$.MultiLanguage('language.json', 'en')" class="btn">English</button>
+      <button onclick="$.i18n().locale = 'zh';" class="btn">中文</button><span>&nbsp;</span>
+      <button onclick="$.i18n().locale = 'en';" class="btn">English</button>
+    
+   <li data-i18n="message-hello"></li>
 
-    <p id="message-hello">Fallback text here!</p>
+    <p class="i18n" id="message-hello">test</p>
     
 </body>
 </html>
