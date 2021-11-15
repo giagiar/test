@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
     update_texts();
   });
 
-  $.i18n().load('languages/' + i18n.locale + '.json', i18n.locale);
+  $.i18n().load('jquery.i18n/languages/' + i18n.locale + '.json', i18n.locale);
 
   update_texts();
 });
