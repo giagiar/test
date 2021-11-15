@@ -11,7 +11,10 @@ jQuery(document).ready(function() {
   });
 
   $.i18n().load({
-    'en':'languages/en.json',
+    'en': '{
+      'welcome': 'Welcome!',
+      'messages-hello':'hihi',
+    }',
     'zh':'languages/zh.json'
   });
 
