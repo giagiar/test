@@ -11,11 +11,7 @@ jQuery(document).ready(function() {
   });
 
   $.i18n().load({
-    'en': {
-      'welcome': 'Welcome!',
-      'messages-hello':'hihi',
-      'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
-    },
+    'en':'languages/en.json',
     'zh':'languages/zh.json'
   });
 
