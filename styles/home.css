@@ -4,37 +4,11 @@
     src: url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap') unicode-range: U+4E00-9FFF;
 }
 
-html {
-    min-width: 320px;
-    min-height: 320px;
-    width: 100vw;
-    height: 100vh;
-}
 
-body {
-    width: 100vw;
-    height:100vh;
-    margin:0;
-    background: #F5DF4E;
-    overflow-x: hidden;
-}
-
-html, body,p, a, h1, h2, h3, h4, h5, h6{
-    font-family: 'Roboto','Noto Sans HK', 'Arial', sans-serif;
-    text-align: justify;
-    text-justify:inter-word;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
-}
 
 @media screen and (max-width: 640px) {
-    
-    .img_bg{
-        position: absolute;
-        width: 100vw;
-        height: auto;
-        overflow-y: hidden;
-        content:url(../img/bg_small.svg);
+    body {    
+        background-image: url(../img/bg_small.svg);
     }
 
     .img_home{
@@ -81,13 +55,8 @@ html, body,p, a, h1, h2, h3, h4, h5, h6{
 }
 
 @media screen and (min-width:641px) and (max-width: 1079px) {
-    
-    .img_bg{
-        position: absolute;
-        width: 100vw;
-        height: auto;
-        overflow-y: hidden;
-        content:url(../img/bg_medium.svg);
+    body {    
+        background-image: url(../img/bg_medium.svg);
     }
 
     .img_home{
@@ -135,13 +104,8 @@ html, body,p, a, h1, h2, h3, h4, h5, h6{
 
 
 @media screen and (min-width: 1080px) {
-    
-    .img_bg{
-        position: absolute;
-        width: 100vw;
-        height: auto;
-        overflow-y: hidden;
-        content:url(../img/bg_large.svg);
+    body {    
+        background-image: url(../img/bg_large.svg);
     }
 
     .img_home{
