@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
       'welcome': 'Welcome!',
       'messages-hello':'hihi'
     },
-    zh:'languages/zh.json'
+    zh: './languages/zh.json'
   });
 
   update_texts();
