@@ -1,3 +1,11 @@
+    $.i18n().load( {
+	en: {
+		'message-hello': 'Hello World',
+		'message-goodbye': 'Good bye'	},
+	zh: 'languages/zh.json', // Messages for Mandarin
+
+} );
+
 ( function ( $ ) {
 	'use strict';
 
