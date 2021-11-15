@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
   $.i18n().load({
     'en': '{
       'welcome': 'Welcome!',
-      'messages-hello':'hihi',
+      'messages-hello':'hihi'
     }',
     'zh':'languages/zh.json'
   });
