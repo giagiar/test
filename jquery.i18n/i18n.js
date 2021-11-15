@@ -10,13 +10,7 @@ jQuery(document).ready(function() {
     update_texts();
   });
 
-  $.i18n().load({
-    'en': {
-      'welcome': 'Welcome!',
-      'messages-hello':'hihi'
-    },
-    zh: 'languages/zh.json'
-  });
+  $.i18n().load(i18n.locale + '.json', i18n.locale);
 
   update_texts();
 });
