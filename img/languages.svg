@@ -1,0 +1,17 @@
+<svg id="_Trailing_icon_3" data-name="📍Trailing icon 3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Boundary" width="24" height="24" fill="none"/>
+  <g id="Group_39" data-name="Group 39" transform="translate(-188 -17)">
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(191 20)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="9" cy="9" r="9" stroke="none"/>
+      <circle cx="9" cy="9" r="8.5" fill="none"/>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(196 20)" fill="none" stroke="#fff" stroke-width="1">
+      <ellipse cx="4" cy="9" rx="4" ry="9" stroke="none"/>
+      <ellipse cx="4" cy="9" rx="3.5" ry="8.5" fill="none"/>
+    </g>
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(209 25) rotate(90)" fill="none" stroke="#fff" stroke-width="1">
+      <ellipse cx="4" cy="9" rx="4" ry="9" stroke="none"/>
+      <ellipse cx="4" cy="9" rx="3.5" ry="8.5" fill="none"/>
+    </g>
+  </g>
+</svg>

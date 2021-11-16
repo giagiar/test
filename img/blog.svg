@@ -1,0 +1,7 @@
+<svg id="icon_action_bookmark_border_24px" data-name="icon/action/bookmark_border_24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Boundary" width="24" height="24" fill="none"/>
+  <g id="_Color" data-name=" ↳Color" transform="translate(5 3)" fill="none" stroke-miterlimit="10">
+    <path d="M12,0H2A2.006,2.006,0,0,0,0,2V18l7-3,7,3V2A2.006,2.006,0,0,0,12,0Z" stroke="none"/>
+    <path d="M 2 1 C 1.448599815368652 1 1 1.448600769042969 1 2 L 1 16.48345565795898 L 7 13.91203022003174 L 13 16.48345565795898 L 13 2 C 13 1.448600769042969 12.55140018463135 1 12 1 L 2 1 M 2 0 L 12 0 C 13.10000038146973 0 14 0.8999996185302734 14 2 L 14 18 L 7 15 L 0 18 L 0 2 C 0 0.8999996185302734 0.8999996185302734 0 2 0 Z" stroke="none" fill="#fff"/>
+  </g>
+</svg>

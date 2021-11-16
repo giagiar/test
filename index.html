@@ -29,21 +29,32 @@
 </head>
     
 <body>
-    
         
-    <a href="#" class="lang-switch" data-locale="zh" >中文</a> |
-    <a href="#" class="lang-switch" data-locale="en" >English</a>
-    
-    <h1 data-i18n="welcome"></h1>
-    <p data-i18n="messages-hello">test</p>
+    <div style="float: right"><a href="#" class="lang-switch" data-locale="zh" >中文</a> |
+    <a href="#" class="lang-switch" data-locale="en" >English</a></div>
+
 
     <img class="img_home" src="img/home.png">
-    <a href="product.html"><img class="img_product" src="img/product.png"></a>
-    <a href="order.html"><img class="img_order" src="img/order.png"></a>
-    <a href="contact.html"><img class="img_contact" src="img/contact.png"></a>
-    <a href="blog.html"><img class="img_blog" src="img/blog.png"></a>
 
+    <a href="product.html"><div class="product">
+        <img src="img/product.png">
+        <p data-i18n="product"></p>
+    </div></a>
     
+    <a href="order.html"><div class="order">
+        <img src="img/order.png">
+        <p data-i18n="order"></p>
+    </div></a>
+    
+    <a href="contact.html"><div class="contact">
+        <img src="img/contact.png">
+        <p data-i18n="contact"></p>
+    </div></a>
+    
+    <a href="blog.html"><div class="blog">
+        <img src="img/blog.png">
+        <p data-i18n="blog"></p>
+    </div></a>
 
     
 </body>

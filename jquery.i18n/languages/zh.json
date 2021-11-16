@@ -1,7 +1,10 @@
 {
 	"welcome" : "歡迎",
 	"messages-hello": "您好",
-
+	"product": "訂餐去",
+	"order": "訂單管理",
+	"contact": "關於廚房",
+	"blog": "吸收新知",
 
 	"food" : "餐點",
 	"equipment" : "裝備"
