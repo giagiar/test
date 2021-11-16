@@ -1,6 +1,7 @@
 body{    
     background: #F5DF4E;
     background-size: 100% auto;
+    background-repeat: repeat-y;
     overflow-x: hidden;
 }
 
