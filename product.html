@@ -11,6 +11,7 @@
     <title>天池補給站</title>
     
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/subpages.css">
     <link rel="stylesheet" href="styles/product.css">
     
     <script src="jquery.i18n/jquery-3.6.0.min.js"></script>
@@ -24,11 +25,35 @@
     <script src="jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
     
     <script src="jquery.i18n/i18n.js"></script>
-
+    <script src="script/function.js"></script>
+    <script>$.i18n( {
+    locale: 'zh' // Locale is Hebrew
+} );</script>
             
 </head>
     
 <body>
+    
+    <div id="extPage" class="extPage" style="display: none;" >  
+        <div class="closePopup"  onclick="openWindow('extPage'); "> </div>    
+            
+            <div class="productDetailsPage">
+                <div id="productDetails" class="productDetails ">
+                    <h3>Title</h3>
+                    <h6>$450</h6>
+                    <img  src="img/temp.jpg">
+                    <p>descriptiondescriptiondescription</p>
+                    <form action="/action_page.php">
+                      <div><label data-i18n="selectDate" >Date</label>
+                      <input type="date" id="orderDate" name="orderDate" value="2021-11-17" ></div>
+                       <div> <input type="number" value="1" min="0" ></div>
+                        
+                      <div><input type="submit"></div>
+                    </form>
+                </div>
+        </div>
+       
+    </div>
     
     <div class="navigation">
         <a href="index.html"><img src="img/home.svg"></a>
@@ -47,11 +72,11 @@
 
         <h4 data-i18n="food"></h4>
 
-        <span class="product-item">
+        <a  onclick="openWindow('extPage'); setDateInterval();"><span class="product-item">
             <img src="img/temp.jpg">
             <h3 data-i18n="product-title"></h3>
             <h6 id="price">$450</h6>
-        </span>
+        </span></a>
 
         <span class="product-item">
             <img src="img/temp.jpg">

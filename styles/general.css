@@ -20,7 +20,7 @@ html, body,p, a, h1, h2, h3, h4, h5, h6{
 }
 
 
-p{line-height: 1.5;}
+p{ line-height: 1.5; }
 
 h3{
     font-weight: 600;
@@ -61,4 +61,44 @@ h6{
     width:24px;
     height:24px;
     margin:12px 4vw;
+}
+
+input{
+    border: none;
+    background-color: rgba(245, 223, 78, 0.2);
+    color:#555;
+    height:24px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #F5DF4E;
+    background-color: #FFFBE3;
+    color:#555;
+    height:24px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+input[type=number]::-webkit-outer-spin-button, 
+      input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: inner-spin-button !important;
+        width: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+}
+
+input[type=submit]{
+    color:#F5DF4E;
+    background-color: transparent;
+}
+
+input[type=submit]:hover{
+    color:#555;
+    background-color: transparent;
+    outline: none;
 }

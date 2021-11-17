@@ -1,0 +1,59 @@
+body {    
+    background-color: #FEFEFE;}
+
+
+.extPage{
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    background-color: rgba(0,0,0,0.4);
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.closePopup{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.closeButton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position:absolute;
+    margin-top: 1vh;
+    margin-left:101%;
+    color: #D0104C;
+    background-color:rgba(255,255,255,1); 
+    font-size: 12pt;
+    z-index: 100000;
+    text-align: center;
+    box-shadow:0px 0px 6px 2px #DDDDDD;
+    }
+
+.closeButton:hover{
+    color: #F596AA; 
+}
+
+.topButton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: calc(1vh + 40px);
+    margin-left:101%;
+    color: #D0104C;
+    background-color:rgba(255,255,255,1); 
+    font-size: 12pt;
+    z-index: 100000;
+    text-align: center;
+    box-shadow:0px 0px 6px 2px #DDDDDD;
+    }
+
+.topButton:hover{
+    color: #F596AA; 
+}
+

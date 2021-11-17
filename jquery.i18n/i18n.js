@@ -1,10 +1,12 @@
 jQuery(document).ready(function() {
+    
+    $.i18n().locale = 'zh';
+    
+    function update_texts() {
 
-  var update_texts = function() {
-
-    $('body').i18n();
-   // $('#messages').text($.i18n('message_from', 'Ann', 2, 'female'));
-  };
+        $('body').i18n();
+        // $('#messages').text($.i18n('message_from', 'Ann', 2, 'female'));
+    };
 
 
     
