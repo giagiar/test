@@ -32,6 +32,7 @@ function setDateInterval(){
 
     day30 = yyyy + '-' + mm + '-' + dd;
     
+    document.getElementById("orderDate").value = tomorrow;
     document.getElementById("orderDate").min = tomorrow;
     document.getElementById("orderDate").max = day30;    
 }
@@ -104,3 +105,7 @@ function scrollFunction() {
   }
 }
 
+function auto_height(elem) {  
+    elem.style.height = "1px";
+    elem.style.height = (elem.scrollHeight)+"px";
+}

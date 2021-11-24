@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/subpages.css">
     <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/input.css">
     
     <script src="jquery.i18n/jquery-3.6.0.min.js"></script>
     <script src="jquery.i18n/CLDRPluralRuleParser.js"></script>
@@ -23,11 +24,12 @@
     <script src="jquery.i18n/jquery.i18n.parser.js"></script>
     <script src="jquery.i18n/jquery.i18n.emitter.js"></script>
     <script src="jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="jquery.i18n/js.cookie.js"></script>
     
     <script src="jquery.i18n/i18n.js"></script>
     <script src="script/function.js"></script>
     <script>$.i18n( {
-    locale: 'zh' // Locale is Hebrew
+    locale: 'zh' // Locale is Mandarin
 } );</script>
             
 </head>
@@ -39,16 +41,23 @@
             
             <div class="productDetailsPage">
                 <div id="productDetails" class="productDetails ">
-                    <h3>Title</h3>
-                    <h6>$450</h6>
+                    <h2>【晚餐】獵人雞腿&飯</h2>
+                    <h5>$450</h5>
                     <img  src="img/temp.jpg">
-                    <p>descriptiondescriptiondescription</p>
+                    <p>主食：椴木香菇炊飯  配菜：雞油芋頭  熱湯：依季節定</p>
                     <form action="/action_page.php">
-                      <div><label data-i18n="selectDate" >Date</label>
-                      <input type="date" id="orderDate" name="orderDate" value="2021-11-17" ></div>
-                       <div> <input type="number" value="1" min="0" ></div>
+                        <div class="inputbox"><label class="pure-material-textfield-outlined">
+                            <input  type="date" id="orderDate" name="orderDate" value="2021-11-17" placeholder=" ">
+                            <span data-i18n="selectDate">Date</span>
+                        </label></div>
+
+                        <div class="inputbox"><label class="pure-material-textfield-outlined">
+                            <input type="number" value="1" min="0" placeholder=" ">
+                            <span data-i18n="quantity">Quantity</span>
+                        </label></div>
+
                         
-                      <div><input type="submit"></div>
+                      <div><input type="submit" data-i18n="[value]addToCart" ></div>
                     </form>
                 </div>
         </div>
@@ -61,54 +70,107 @@
         <a href="order.html"><img src="img/order.svg"></a>
         <a href="contact.html"><img src="img/contact.svg"></a>
         <a href="blog.html"><img src="img/blog.svg"></a>
-        <button><img src="img/languages.svg"></button>
+        <button class="lang-switch"><img src="img/languages.svg"></button>
     </div>
     
     
     <div class="content">
-        
-        <a href="#" class="lang-switch" data-locale="zh" >中文</a> |
-        <a href="#" class="lang-switch" data-locale="en" >English</a>
 
-        <h4 data-i18n="food"></h4>
+        <h4 data-i18n="food"></h4><hr>
 
-        <a  onclick="openWindow('extPage'); setDateInterval();"><span class="product-item">
+        <div class="productList"><a  onclick="openWindow('extPage'); setDateInterval();"><span class="product-item">
             <img src="img/temp.jpg">
-            <h3 data-i18n="product-title"></h3>
+            <h3 data-i18n="【晚餐】獵人雞腿&飯"></h3>
             <h6 id="price">$450</h6>
         </span></a>
 
         <span class="product-item">
             <img src="img/temp.jpg">
-            <h3 data-i18n="product2-title"></h3>
+            <h3 data-i18n="晚餐-獵人雞腿&麵"></h3>
             <h6 id="price">$450</h6>
         </span>
 
         <span class="product-item">
             <img src="img/temp.jpg">
-            <h3 data-i18n="product3-title"></h3>
+            <h3 data-i18n="晚餐-煙燻山肉&飯"></h3>
             <h6 id="price">$450</h6>
         </span>
 
         <span class="product-item">
             <img src="img/temp.jpg">
-            <h3 data-i18n="product4-title"></h3>
+            <h3 data-i18n="【晚餐】煙燻山肉&麵"></h3>
             <h6 id="price">$450</h6>
         </span>
 
         <span class="product-item">
             <img src="img/temp.jpg">
-            <h3 data-i18n="product5-title"></h3>
+            <h3 data-i18n="【晚餐】樹豆乾咖哩(素)&飯"></h3>
             <h6 id="price">$450</h6>
         </span>
 
         <span class="product-item">
             <img src="img/temp.jpg">
-            <h3 data-i18n="product6-title"></h3>
+            <h3 data-i18n="【晚餐】樹豆乾咖哩(素)&麵"></h3>
             <h6 id="price">$450</h6>
         </span>
+        
+          <span class="product-item">
+            <img src="img/temp.jpg">
+            <h3 data-i18n="【早餐】"></h3>
+            <h6 id="price">$150</h6>
+        </span>
 
-        <h4 data-i18n="equipment"></h4>
+        <span class="product-item">
+            <img src="img/temp.jpg">
+            <h3 data-i18n="【早午餐】叉燒拉麵"></h3>
+            <h6 id="price">$150</h6>
+        </span>
+
+        <span class="product-item">
+            <img src="img/temp.jpg">
+            <h3 data-i18n="【早午餐】蔬食拉麵(素)"></h3>
+            <h6 id="price">$150</h6>
+        </span>
+        </div>
+
+        <h4 data-i18n="equipment"></h4><hr>
+        <div class="productList">
+        <span class="product-item">
+            <img src="img/product/Equip_01%20ISUKA%20%20Alpha%20Light%20700X.jpg">
+            <h3 data-i18n="化纖睡袋"></h3>
+            <h6 id="price">$200</h6>
+        </span>
+
+        <span class="product-item">
+            <img src="img/product/Equip_02%20KEEP%20PN%20Down790.jpg">
+            <h3 data-i18n="輕量羽絨睡袋"></h3>
+            <h6 id="price">$200</h6>
+        </span>
+        
+          <span class="product-item">
+            <img src="img/product/Equip_03%20THERM-A-REST%20RidgeRest%20SOL.jpg">
+            <h3 data-i18n="睡墊(R)"></h3>
+            <h6 id="price">$50</h6>
+        </span>
+
+        <span class="product-item">
+            <img src="img/product/Equip_04%20THERM-A-REST%20RidgeRest%20SOL.jpg">
+            <h3 data-i18n="睡墊(L)"></h3>
+            <h6 id="price">$50</h6>
+        </span>
+
+        <span class="product-item">
+            <img src="img/product/Equip_05%20Amenity%20Dome.jpg">
+            <h3 data-i18n="帳篷(小)"></h3>
+            <h6 id="price">$400</h6>
+        </span>
+        
+            <span class="product-item">
+            <img src="img/product/Equip_06%20Landbreeze.jpg">
+            <h3 data-i18n="帳篷(大)"></h3>
+            <h6 id="price">$600</h6>
+        </span>
+        </div>
     
 </div>
     

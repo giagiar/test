@@ -1,6 +1,10 @@
 body {    
     background-color: #FEFEFE;}
 
+.content{
+    padding:4vw;
+}
+
 
 .extPage{
     display: none;
@@ -16,7 +20,7 @@ body {
 .closePopup{
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: absolute;
 }
 
 .closeButton{

@@ -17,21 +17,22 @@
     <script src="jquery.i18n/CLDRPluralRuleParser.js"></script>
     <script src="jquery.i18n/jquery.i18n.js"></script>
     <script src="jquery.i18n/jquery.i18n.messagestore.js"></script>
-    <script src="jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="jquery.i18n/jquery.i18n.fallbacks.js"></script> 
     <script src="jquery.i18n/jquery.i18n.language.js"></script>
     <script src="jquery.i18n/jquery.i18n.parser.js"></script>
     <script src="jquery.i18n/jquery.i18n.emitter.js"></script>
     <script src="jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="jquery.i18n/js.cookie.js"></script>
     
     <script src="jquery.i18n/i18n.js"></script>
 
             
 </head>
     
-<body onload="update_texts();">
+<body >
+    <div id="i18n">
         
-    <div style="float: right"><a href="#" class="lang-switch" data-locale="zh" >中文</a> |
-    <a href="#" class="lang-switch" data-locale="en" >English</a></div>
+    <div style="float: right"><button class="lang-switch"></button></div>
 
 
     <img class="img_home" src="img/home.png">
@@ -56,7 +57,7 @@
         <p data-i18n="blog"></p>
     </div></a>
 
-    
+    </div>
 </body>
 </html>
     

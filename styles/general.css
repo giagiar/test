@@ -24,7 +24,7 @@ p{ line-height: 1.5; }
 
 h3{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     color:#333;
 }
 
@@ -35,10 +35,20 @@ h4{
     margin:20px 0 0 0;
 }
 
-h6{
+h5{
     font-weight: 500;
     font-size: 16px;
     color: #555;
+}
+
+h6{
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+
+hr{
+    border:1px solid #F5DF4E;
 }
 
 ::-webkit-scrollbar {
@@ -50,7 +60,7 @@ h6{
     background-color: #F5DF4E;
 }
 
-.navigation >button{
+button{
     border: none;
     margin: 0;
     padding: 0;
@@ -58,47 +68,23 @@ h6{
 }
 
 .navigation >a >img, .navigation >button >img{
-    width:24px;
-    height:24px;
-    margin:12px 4vw;
+    width:36px;
+    height:36px;
+    margin:6px 4vw;
 }
 
-input{
-    border: none;
-    background-color: rgba(245, 223, 78, 0.2);
-    color:#555;
-    height:24px;
-    padding: 2px 8px;
-    border-radius: 4px;
-}
-
-input:focus{
-    outline: none;
-    border-bottom: 2px solid #F5DF4E;
-    background-color: #FFFBE3;
-    color:#555;
-    height:24px;
-    padding: 2px 8px;
-    border-radius: 4px;
-}
-
-input[type=number]::-webkit-outer-spin-button, 
-      input[type=number]::-webkit-inner-spin-button {
-        -webkit-appearance: inner-spin-button !important;
-        width: 25px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-}
+label{margin: 16px 0;}
 
 input[type=submit]{
+    border:none;
     color:#F5DF4E;
-    background-color: transparent;
+    background-color: transparent;    
+    margin: 8px 0;
 }
 
 input[type=submit]:hover{
     color:#555;
     background-color: transparent;
     outline: none;
+
 }

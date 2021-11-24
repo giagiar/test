@@ -21,12 +21,23 @@ a :hover >p{
 
 a :hover >img{opacity: 1.0;}
 
-div >img {width:inherit;
+a > div >img {width:inherit;
      position: absolute;
      opacity:  0.8;}
 
-div >p {position: absolute;
+a > div >p {position: absolute;
     white-space: nowrap;}
+
+
+.lang-switch{
+    margin-top: 12px;
+    margin-right: 16px;
+    width: 36px;
+    height:36px;
+    background-image: url(../img/languages.svg);
+    background-size: contain;
+}
+
 
 @media screen and (max-width: 640px) {
     body {    
@@ -79,8 +90,8 @@ div >p {position: absolute;
     }
     
     div.contact>p{
-        margin-left:32vw;
-        margin-top: 8vw;
+        margin-left:0vw;
+        margin-top: 40vw;
     }
     
     .blog{
@@ -91,8 +102,8 @@ div >p {position: absolute;
         margin-top: 131vw;
     }
     div.blog>p{
-        margin-left:38vw;
-        margin-top: 18vw;
+        margin-left:42vw;
+        margin-top: 25vw;
     }
 }
 
@@ -173,7 +184,7 @@ div >p {position: absolute;
         position: absolute;
         width:40vw;
         height:auto;
-        margin-left: 68vw;
+        margin-left: -8vw;
         margin-top: 2vw;
 
     }
@@ -182,12 +193,12 @@ div >p {position: absolute;
         position: absolute;
         width:25vw;
         height:auto;
-        margin-left:31.25vw;
+        margin-left:46.25vw;
         margin-top: 6vw;
     }
     
     div.product>p{
-        margin-left:2vw;
+        margin-left:20vw;
         margin-top: 5vw;
     }
 
@@ -195,12 +206,12 @@ div >p {position: absolute;
         position: absolute;
         width:18vw;
         height:auto;
-        margin-left:22.25vw;
+        margin-left:37.25vw;
         margin-top: 32vw;
     }
     
     div.order>p{
-        margin-left:15vw;
+        margin-left:-3vw;
         margin-top: 10vw;
     }
     
@@ -208,12 +219,12 @@ div >p {position: absolute;
         position: absolute;
         width:25vw;
         height:auto;
-        margin-left:56.25vw;
+        margin-left:71.25vw;
         margin-top: 24vw;
     }
     
     div.contact>p{
-        margin-left:25vw;
+        margin-left:-8vw;
         margin-top: 18vw;
     }
 
@@ -221,7 +232,7 @@ div >p {position: absolute;
         position: absolute;
         width:18vw;
         height:auto;
-        margin-left: 10vw;
+        margin-left: 25vw;
         margin-top: 6vw;
     }
     
