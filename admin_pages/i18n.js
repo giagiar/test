@@ -12,8 +12,8 @@ jQuery(document).ready(function() {
          
     $.i18n().load({ 
         
-      en:'jquery.i18n/languages/en.json',
-      zh:'jquery.i18n/languages/zh.json',
+      en:'languages/en.json',
+      zh:'languages/zh.json',  
         
     }).done( function() { update_texts(lang); } );
     

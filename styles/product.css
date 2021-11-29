@@ -14,6 +14,7 @@
     box-shadow: 6px 6px 12px rgba(0,0,0,0.2), -2px -2px 2px rgba(0,0,0,0.2);
 }
 
+
 .product-item >img{
     width:100%;
     object-position: 50% 50%;
@@ -26,6 +27,7 @@
     max-height:90vh;
     border-radius:6px;
     overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
 }
 
 .productDetails{
@@ -46,7 +48,73 @@
     margin: 16px 0;
 }
 
+.listContent{
+    margin: 4vw;
+    height:calc(100vh - 8vw - 104px);
+    overflow: scroll;
+}
+
+.listContent > div > form > input[type="checkbox"]{
+    margin-top:0vw;
+}
+
+.orderList{
+    margin-left: 40px;
+    margin-top: -27px;
+}
+
+.orderList > label > img{
+    position: absolute;
+    width:27vw;
+    max-width: 240px;
+    height:18vw;
+    max-height: 160px;
+    object-position: 50% 50%;
+    object-fit: cover;
+    background-color: #F8F8F8;
     
+}
+    
+.orderList > label > div{
+    width: calc(65vw - 52px);
+    margin-left:calc(27vw + 12px);
+}
+
+.listPrice{
+    float: right;
+}
+
+form{
+    position: relative;
+
+}
+
+.bottomBar{
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    background-color: #FEFEFE;
+    bottom:0;
+    z-index: 1000;
+    box-shadow: -2px -2px 2px rgba(0,0,0,0.2);
+}
+
+.bottomBar > input{
+    position: absolute;
+    margin:16px 4vw;
+}
+
+.buttomAction{
+    float:right;
+    margin: 12px 4vw;
+    
+}
+
+.totalPrice{
+    margin-right:24px;
+    color: #F5DF4E;
+}
+
 @media screen and (max-width: 640px) {
     .product-item{
         width:40vw;
@@ -69,7 +137,7 @@
     
     .productDetailsPage{
             width:70vw;
-            margin:5vw 15vw;
+            margin:5vh 15vw;
     }
 
 
@@ -98,7 +166,7 @@
 
     .productDetailsPage{
         width: 600px;
-        margin:5vw calc((100% - 600px) / 2);
+        margin:5vh calc((100% - 600px) / 2);
     }
 }
 
@@ -125,7 +193,7 @@
     
     .productDetailsPage{
         width:750px;
-        margin:5vw calc((100% - 750px) / 2);
+        margin:5vh calc((100% - 750px) / 2);
     }
 
 }

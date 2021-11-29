@@ -1,0 +1,76 @@
+@font-face {
+    font-family:'Nanum Pen Script','Roboto', 'Noto Sans TC', 'Arial', sans-serif, cursive;;
+    src: url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+    src: url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap') unicode-range: U+4E00-9FFF;
+}
+
+html,body {
+    min-width: 320px;
+    min-height: 320px;
+    width: 100vw;
+    height:auto;
+    margin:0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    background-color: #FEFEFE;
+}
+
+
+html, body,p, a, h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto','Noto Sans HK', 'Arial', sans-serif;
+    text-justify:inter-word;
+    letter-spacing: 0.1em;
+}
+
+p{ 
+    line-height: 1.5; 
+    margin-left:56px;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 16px;
+    color:#333;
+    margin-top: 48px;
+}
+
+
+h5{
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+    margin-left: 80px;
+}
+
+h6{
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+    margin-left: 80px;
+}
+
+table {margin-left: 80px;}
+
+
+table, tr, th, td {
+    border:1px solid #EEE;
+    font-size: 14px;
+    font-weight: 300;
+    padding:8px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+hr{
+    border:1px solid #F5DF4E;
+    margin: 48px 0;
+}
+
+
+.center{
+    width:100%;
+    text-align: center;
+}

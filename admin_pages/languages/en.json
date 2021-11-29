@@ -1,0 +1,12 @@
+{
+	"productNameZh": "Product name-zh",
+	"productNameEn": "Product name-en",
+	"productDescZh":"Product description-zh",
+	"productDescEn": "Product description-en",
+	"productPrice": "Product price",
+	"productQuantity": "Product quantity",
+	"productLinkDescZh" : "Product link description-zh",
+	"productLinkDescEn" : "Product link description-en",
+	"productLink" : "Product link",
+	"summit" : "Summit"
+}

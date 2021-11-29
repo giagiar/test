@@ -8,9 +8,10 @@
     padding-top: 8px;
     font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1;
     overflow: hidden;
     width:100%;
+    margin: 16px 0 0;
 }
 
 /* Input, Textarea */
@@ -22,7 +23,7 @@
     border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
     border-top-color: transparent;
     border-radius: 4px;
-    padding: 12px 12px 12px;
+    padding: 12px 8px 8px;
     width: 100%;
     height: inherit;
     color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);

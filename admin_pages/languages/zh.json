@@ -1,0 +1,13 @@
+{
+	"productNameZh" : "商品中文名稱",
+	"productNameEn" : "商品英文名稱",
+	"productDescZh" : "商品中文描述",
+	"productDescEn" : "商品英文描述",
+	"productPrice" : "商品價格",
+	"productQuantity" : "商品數量",
+	"productLinkDescZh" : "商品連結中文顯示",
+	"productLinkDescEn" : "商品連結英文顯示",
+	"productLink" : "商品連結",
+	"summit" : "送出"
+
+}

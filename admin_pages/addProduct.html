@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="zh" dir="ltr">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Miasan,outdoor,kitchen,天池山莊, 廚房，訂餐，Tienchi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>天池補給站</title>
+    
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/subpages.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/input.css">
+    
+    <script src="../jquery.i18n/jquery-3.6.0.min.js"></script>
+    <script src="../jquery.i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../jquery.i18n/jquery.i18n.js"></script>
+    <script src="../jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="../jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="../jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="../jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../jquery.i18n/js.cookie.js"></script>
+    
+    <script src="i18n.js"></script>
+
+            
+</head>
+    
+<body>       
+    
+    <form enctype="multipart/form-data">
+        
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input  type="text" id="productNameZh" name="productNameZh" placeholder=" ">
+            <span data-i18n="productNameZh">商品中文名稱</span>
+        </label></div>
+
+       <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input  type="text" id="productNameEn" name="productNameEn" placeholder=" " >
+            <span data-i18n="productNameEn">商品英文名稱</span>
+        </label></div>
+
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+
+            <textarea id="productDescZh" name="productDescZh"
+                  rows="1" cols="33" class="auto_height" oninput="auto_height(this)"  placeholder=" "></textarea>
+            <span data-i18n="productDescZh">商品中文描述</span>
+
+        </label></div>
+
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+
+            <textarea id="productDescEn" name="productDescEn"
+                  rows="1" cols="33" class="auto_height" oninput="auto_height(this)"  placeholder=" "></textarea>
+            <span data-i18n="productDescEn">商品英文描述</span>
+
+        </label></div>
+        
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input type="file" name="productPic" id="productPic" accept="image/jpeg, image/png" placeholder=" ">
+            <span >選擇檔案</span>
+        </label></div>
+        
+        <img class="prev" id="prev" src="#" alt="preview image" style="visibility: hidden;"/>
+        <script>
+            productPic.onchange = evt => {
+              const [file] = productPic.files
+              if (file) {
+                prev.src = URL.createObjectURL(file);
+                document.getElementById("prev").style.visibility="visible";
+              }
+                
+            }
+        </script>
+
+       <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input  type="number" id="productPrice" name="productPrice" placeholder=" ">
+            <span data-i18n="productPrice">商品價格</span>
+        </label></div>
+
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input  type="number" id="productQuantity" name="productQuantity"  placeholder=" ">
+            <span data-i18n="productQuantity">商品數量</span>
+        </label></div>
+
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input  type="text" id="productLinkDescZh" name="productLinkDescZh"  placeholder=" ">
+            <span data-i18n="productLinkDescZh">商品連結中文顯示</span>
+        </label></div>
+
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input  type="text" id="productLinkDescEn" name="productLinkDescEn"  placeholder=" ">
+            <span data-i18n="productLinkDescEn">商品連結英文顯示</span>
+        </label></div>
+        
+        <div class="inputbox"><label class="pure-material-textfield-outlined">
+            <input  type="text" id="productLink" name="productLink"  placeholder=" ">
+            <span data-i18n="productLink">商品連結</span>
+        </label></div>
+        
+        <div><input type="submit" data-i18n="[value]summit" ></div>
+    </form>
+    
+</body>

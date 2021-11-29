@@ -109,3 +109,25 @@ function auto_height(elem) {
     elem.style.height = "1px";
     elem.style.height = (elem.scrollHeight)+"px";
 }
+
+function makeAllChecked(source, name) {
+  checkboxes = document.getElementsByName(name);
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+
+function getCheckedBoxes(chkboxName) {
+  var checkboxes = document.getElementsByName(chkboxName);
+  var checkboxesChecked = [];
+  // loop over them all
+  for (var i=0; i<checkboxes.length; i++) {
+     // And stick the checked ones onto an array...
+     if (checkboxes[i].checked) {
+        checkboxesChecked.push(checkboxes[i]);
+     }
+  // Return the array if it is non-empty, or null
+  return checkboxesChecked.length > 0 ? checkboxesChecked : null;
+  }
+}
+

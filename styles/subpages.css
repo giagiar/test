@@ -5,6 +5,18 @@ body {
     padding:4vw;
 }
 
+iframe{
+    width:100%;
+    height:calc(100vh - 8vw - 56px);
+    outline: none;
+    border:none;
+}
+
+.prev{
+    width:45%;
+    height:auto;
+    margin: 12px;
+}
 
 .extPage{
     display: none;
@@ -15,6 +27,8 @@ body {
     right:0;
     top:0;
     bottom:0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .closePopup{
